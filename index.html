@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VESL — Vascular Experimental Systems Lab</title>
+  <meta name="description" content="VESL — Vascular Experimental Systems Lab.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/" aria-label="VESL home">
+      <img src="logo.svg" alt="" width="40" height="35">
+      <span>VESL</span>
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Vascular Experimental Systems Lab</p>
+        <h1>Engineering tools to study the living vasculature.</h1>
+        <!-- TODO: replace with your own one-line pitch -->
+        <p class="lede">A short sentence about what VESL builds and who it is for goes here.</p>
+        <a class="button" href="#contact">Get in touch</a>
+      </div>
+      <img class="hero-logo" src="logo.svg" alt="VESL logo">
+    </section>
+
+    <section id="about" class="band">
+      <h2>About</h2>
+      <!-- TODO: company background -->
+      <p>Describe the problem VESL addresses, the team's background, and where the company is based.</p>
+    </section>
+
+    <section id="work" class="band">
+      <h2>What we work on</h2>
+      <div class="cards">
+        <article>
+          <h3>Area one</h3>
+          <p>Placeholder for a product, method or research direction.</p>
+        </article>
+        <article>
+          <h3>Area two</h3>
+          <p>Placeholder for a product, method or research direction.</p>
+        </article>
+        <article>
+          <h3>Area three</h3>
+          <p>Placeholder for a product, method or research direction.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="band">
+      <h2>Contact</h2>
+      <!-- TODO: set up this address in one.com email, or change it -->
+      <p><a href="mailto:info@vesl.se">info@vesl.se</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year">2026</span> VESL — Vascular Experimental Systems Lab</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

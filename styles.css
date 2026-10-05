@@ -1,0 +1,121 @@
+/* Colours taken from the VESL logo */
+:root {
+  --cream: #faeddb;
+  --cream-deep: #f1dfc6;
+  --navy: #113545;
+  --navy-soft: #3d5a68;
+  --line: #dcc7a8;
+  --max: 64rem;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--navy);
+  font: 400 1.0625rem/1.6 "Inter", system-ui, sans-serif;
+}
+
+h1, h2, h3, .brand span {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 0.6em;
+}
+
+a { color: inherit; }
+
+/* Header */
+.top {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+.brand span { font-size: 1.5rem; margin: 0; letter-spacing: 0.04em; }
+nav { display: flex; gap: 1.25rem; }
+nav a { text-decoration: none; color: var(--navy-soft); font-weight: 500; }
+nav a:hover { color: var(--navy); text-decoration: underline; }
+
+/* Hero */
+.hero {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 4rem 1rem 5rem;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--navy-soft);
+  margin: 0 0 1rem;
+}
+h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+.lede { font-size: 1.2rem; color: var(--navy-soft); max-width: 34rem; }
+.hero-logo { width: 100%; max-width: 22rem; justify-self: center; }
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.4rem;
+  background: var(--navy);
+  color: var(--cream);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.button:hover { background: var(--navy-soft); }
+
+/* Sections */
+.band {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 3.5rem 1rem;
+  border-top: 1px solid var(--line);
+}
+h2 { font-size: 1.9rem; }
+.band > p { max-width: 40rem; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.25rem;
+}
+.cards article {
+  background: var(--cream-deep);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+.cards h3 { font-size: 1.25rem; }
+.cards p { margin: 0; color: var(--navy-soft); }
+
+footer {
+  border-top: 1px solid var(--line);
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: var(--navy-soft);
+}
+
+@media (max-width: 700px) {
+  .hero { grid-template-columns: 1fr; padding-top: 2rem; gap: 2rem; }
+  .hero-logo { max-width: 12rem; grid-row: 1; }
+  nav { gap: 0.9rem; font-size: 0.95rem; }
+}
